@@ -18,6 +18,6 @@ function salaryProgram () {
   const taxes = (hours * rate) * 0.18 
 
   // output
-  document.getElementById('pay').innerHTML = `Your pay will be: $ ${takeHomeSalary.toFixed(2)}`
-document.getElementById('taxes').innerHTML = 'Your pay will be: $' + takeHomeSalary.toFixed(2)
+  document.getElementById('pay').innerHTML = `Your pay will be: $ ${takeHomeSalary.toFixed(1)}`
+document.getElementById('taxes').innerHTML = 'Your pay will be: $' + taxes.toFixed(2)
 }
