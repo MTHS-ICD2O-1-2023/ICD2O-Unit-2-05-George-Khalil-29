@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <title>Salary  Program, With JS</title>
+  <title>Salary,in JS</title>
 </head>
 <body>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -21,7 +21,7 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Salary Program, With JS</span>
+        <span class="mdl-layout-title">Salary,in JS</span>
       </div>
     </header>
     <main class="mdl-layout__content">
@@ -34,18 +34,18 @@
       <form action="#">
         <div class="mdl-textfield mdl-js-textfield">
           <!-- input pattern attribute -->
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="Hours-You-work" />
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="Hours-Worked" />
           <!-- mdl-textfield__label -->
-          <label class="mdl-textfield__label" for="HoursYouwork">Your Hours</label>
+          <label class="mdl-textfield__label" for="HoursWorked">Hours Worked (hours)</label>
           <!-- class "mdl-textfield__error" -->
           <span class="mdl-textfield__error">Input is not a number.</span>
         </div>
         <br />
         <div class="mdl-textfield mdl-js-textfield">
           <!-- input pattern attribute -->
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="Rate-You-Get" />
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="Hourly-Wage" />
           <!-- mdl-textfield__label -->
-          <label class="mdl-textfield__label" for="rateYouget">Pay Per Hour</label>
+          <label class="mdl-textfield__label" for="HourlyWage">Hourly Wage ($)</label>
           <!-- class "mdl-textfield__error" -->
           <span class="mdl-textfield__error">Input is not a number.</span>
         </div>
@@ -58,9 +58,8 @@
       </form>
       <br />
       <div class="page-content-answer">
-        <div id="pay"></div>
-        <div id="taxes"></div>
-        <div id="takeHomeSalary"></div>
+        <div id="Hours-Worked"></div>
+        <div id="Hourly-Wage"></div>
       </div>
     </main>
   </div>

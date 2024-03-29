@@ -11,14 +11,12 @@
  */
 function salaryProgram() {
   // input
-  const hoursYouwork= parseInt(document.getElementById('Hours-You-work').value)
-  const rateYouget = parseInt(document.getElementById('Rate-You-Get').value)
-  xx = parseFloat(document.getElementById('pay').value)
+  const HoursWorked= parseInt(document.getElementById('Hours-Worked').value)
+  const HourlyWage = parseInt(document.getElementById('Hourly-Wage').value)
 
   // process
-  const pay = (hoursYouwork * rateYouget) * (1.00 - 0.18) ;
-  const taxes = (hoursYouwork * rateYouget) *  0.18 ;
-  const TAX_RATE = 0.18
+  const pay = (HoursWorked * HourlyWage) * (1.00 - 0.18) ;
+  const taxes = (HoursWorked * HourlyWage) *  0.18 ;
 
   // output
   document.getElementById('pay').innerHTML = `Your pay will be: $ ${pay.toFixed(2)}` ; 
