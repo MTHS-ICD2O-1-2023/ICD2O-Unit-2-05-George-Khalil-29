@@ -20,5 +20,5 @@ function salaryProgram() {
 
   // output
   document.getElementById('pay').innerHTML = `Your pay will be: $ ${pay.toFixed(2)}` ; 
-  document.getElementById('taxes').innerHTML = 'Your pay will be: $' + taxes.toFixed(2) ; 
+  document.getElementById('taxes').innerHTML = 'The  goverment will take: $' + taxes.toFixed(2) ; 
 }
