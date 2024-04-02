@@ -24,43 +24,44 @@
         <span class="mdl-layout-title">Salary,in JS</span>
       </div>
     </header>
-  <main class="mdl-layout__content">
-    <div class="right-image">
-      <img src="./images/income_tax.jpg" alt="Taxt Image" />
-    </div>
     <main class="mdl-layout__content">
-      <br />
-      <div class="page-content">please enter your employment information: </div>
-      <form action="#">
-        <div class="mdl-textfield mdl-js-textfield">
-          <!-- input pattern attribute -->
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="Hours-Worked" />
-          <!-- mdl-textfield__label -->
-          <label class="mdl-textfield__label" for="HoursWorked">Hours Worked (hours)</label>
-          <!-- class "mdl-textfield__error" -->
-          <span class="mdl-textfield__error">Input is not a number.</span>
-        </div>
-        <br />
-        <div class="mdl-textfield mdl-js-textfield">
-          <!-- input pattern attribute -->
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="Hourly-Wage" />
-          <!-- mdl-textfield__label -->
-          <label class="mdl-textfield__label" for="HourlyWage">Hourly Wage ($)</label>
-          <!-- class "mdl-textfield__error" -->
-          <span class="mdl-textfield__error">Input is not a number.</span>
-        </div>
-        <br />
-        <!-- Accent-colored raised button with ripple -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="salaryProgram()">
-          Calculate
-        </button>
-      </form>
-      <br />
-      <div class="page-content-answer">
-        <div id="pay"></div>
-        <div id="taxes"></div>
+      <div class="right-image">
+        <img src="./images/income_tax.jpg" alt="Taxt Image" />
       </div>
+      <main class="mdl-layout__content">
+        <br />
+        <div class="page-content">please enter your employment information: </div>
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <!-- input pattern attribute -->
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="Hours-Worked" />
+            <!-- mdl-textfield__label -->
+            <label class="mdl-textfield__label" for="HoursWorked">Hours Worked (hours)</label>
+            <!-- class "mdl-textfield__error" -->
+            <span class="mdl-textfield__error">Input is not a number.</span>
+          </div>
+          <br />
+          <div class="mdl-textfield mdl-js-textfield">
+            <!-- input pattern attribute -->
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="Hourly-Wage" />
+            <!-- mdl-textfield__label -->
+            <label class="mdl-textfield__label" for="HourlyWage">Hourly Wage ($)</label>
+            <!-- class "mdl-textfield__error" -->
+            <span class="mdl-textfield__error">Input is not a number.</span>
+          </div>
+          <br />
+          <!-- Accent-colored raised button with ripple -->
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            onclick="salaryProgram()">
+            Calculate
+          </button>
+        </form>
+        <br />
+        <div class="page-content-answer">
+          <div id="pay"></div>
+          <div id="taxes"></div>
+        </div>
+  </div>
   </main>
 </body>
 </html>
